@@ -16,10 +16,10 @@ MongoClient.connect('mongodb+srv://videojenkins:Hoopshype1@cluster0.cxpup.mongod
         })
         .catch(error => console.error(error))
     })
-    
+
   })
 
-app.listen(3000, function() {
+app.listen(process.env.PORT || 5000, function() {
   console.log('listening on 3000')
 })
 
